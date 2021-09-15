@@ -1,0 +1,39 @@
+.contacts {
+    &__card {
+        max-width: 343px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__card-inner {
+        display: flex;
+        align-items: flex-start;
+        font-size: 12px;
+        line-height: 14px;
+        color: #A6AAAD;
+    }
+    &__card-name {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.87);
+        margin-bottom: 10px;
+    }
+    &__card-organization {
+        margin-bottom: 5px;
+    }
+    &__card-departament {
+        margin-bottom: 5px;
+    }
+    &__card-position {
+        margin-bottom: 10px;
+    }
+    &__card-phone {
+        display: block;
+        color: #212121;
+    }
+    &__card-email {
+        color: #212121;
+    }
+    &__card-img {
+        margin-right: 28px;
+    }
+}

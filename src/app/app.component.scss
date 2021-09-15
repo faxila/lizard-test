@@ -7,4 +7,9 @@
         background-color: $colorWhite;
         padding: 41px 51px 37px 93px;
     }
+    &__cards {
+        display: flex;
+        column-gap: 60px;
+        flex-wrap: wrap;
+    }
 }
