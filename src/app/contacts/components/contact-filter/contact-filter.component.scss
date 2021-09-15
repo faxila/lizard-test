@@ -10,6 +10,10 @@
         border: 1px solid $colorBorderForm;
         border-radius: 72px;
         margin-bottom: 12px;
+        transition: $transition;
+        &:hover, &:hover .contacts__input-inner {
+            border-color: $colorBg;
+        }
     }
     &__select-inner {
         position: relative;
@@ -37,10 +41,16 @@
         color: $colorInput;
         padding: 7px 15px;
         border-radius: 72px 0 0 72px;
+        transition: $transition;
+        &:focus {
+            background-color: $colorTitle;
+            color: $colorWhite;
+        }
     }
     &__input-inner {
         position: relative;
         border-left: 1px solid $colorBorderForm;
+        transition: $transition;
         width: 100%;
     }
     &__input {
@@ -53,6 +63,17 @@
         border: none;
         padding: 7px 50px 7px 8px;
         border-radius: 0 72px 72px 0;
+        transition: $transition;
+        &::placeholder {
+            transition: $transition;
+        }
+        &:focus {
+            background-color: $colorTitle;
+            color: $colorWhite;
+        }
+        &:focus::placeholder {
+            color: $colorWhite;
+        }
     }
     &__btn {
         top: 3px;
@@ -88,7 +109,7 @@
         border-radius: 5px;
         background-color: $colorDarkWhite;
         cursor: pointer;
-        transition: all .2s;
+        transition: $transition;
         &::after {
             content: '';
             position: absolute;
@@ -100,7 +121,7 @@
             border-radius: 50%;
             background-color: #FAFAFA;
             box-shadow: 0px 1px 2px 0px #7f7f7f;
-            transition: all .2s;
+            transition: $transition;
         }
     }
     &__input:checked + &__input-control {
@@ -108,5 +129,11 @@
     }
     &__input:checked + &__input-control::after {
         left: 12px;
+    }
+    &__input + &__input-control:hover {
+        background-color: $colorWhiteDark;
+    }
+    &__input + &__input-control:hover::after {
+        background-color: $colorGray;
     }
 }

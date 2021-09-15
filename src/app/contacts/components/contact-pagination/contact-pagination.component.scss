@@ -16,21 +16,21 @@
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        border: 1px solid #6E767D;
+        border: 1px solid $colorGray;
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
-        color: #6E767D;
-        transition: all .2s;
+        color: $colorGray;
+        transition: $transition;
         &:hover, &--active {
-            border-color: #ED1C24;
-            color: #ED1C24;
+            border-color: $colorRed;
+            color: $colorRed;
         }
         path {
-            transition: 0.2s;
+            transition: $transition;
         }
         &:hover path, &--active path {
-            stroke: #ED1C24;
+            stroke: $colorRed;
         }
     }
 }

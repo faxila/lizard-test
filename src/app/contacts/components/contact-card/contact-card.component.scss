@@ -4,6 +4,10 @@
         max-width: 343px;
         width: 100%;
         margin-bottom: 30px;
+        transition: $transition;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
     &__card-inner {
         display: flex;
