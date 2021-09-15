@@ -2,15 +2,35 @@
 .contacts {
     padding-bottom: 23px;
     &__container {
-        max-width: 1425px;
-        padding: 0 15px;
+        max-width: 1395px;
         margin: 0 auto;
         background-color: $colorWhite;
         padding: 41px 51px 37px 93px;
     }
     &__cards {
         display: flex;
-        column-gap: 60px;
+        column-gap: 75px;
         flex-wrap: wrap;
+    }
+}
+@media (max-width: 1300px) {
+    .contacts {
+        &__cards {
+            column-gap: 60px;
+        }
+    }
+}
+@media (max-width: 1150px) {
+    .contacts {
+        &__cards {
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .contacts {
+        &__container {
+            padding: 30px 15px;
+        }
     }
 }

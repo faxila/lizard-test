@@ -137,3 +137,39 @@
         background-color: $colorGray;
     }
 }
+
+@media (max-width: 810px) {
+    .contacts {
+        &__form {
+            display: block;
+            border: none;
+            box-shadow: none;
+        }
+        &__select-inner {
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+        &__select {
+            border-radius: 72px;
+            border: 1px solid $colorBorderForm;
+        }
+        &__input-inner {
+            border: none;
+        }
+        &__input {
+            border-radius: 72px;
+            border: 1px solid $colorBorderForm;
+        }
+    }
+}
+@media (max-width: 700px) {
+    .contacts {
+        &__toggle {
+            display: block;
+        }
+        &__toogle-text + &__toogle-text {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+}
