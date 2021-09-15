@@ -1,0 +1,36 @@
+@import '../../../../variables';
+
+.contacts {
+    &__pagination-list {
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+    }
+    &__pagination-item + &__pagination-item {
+        margin-left: 16px;
+    }
+    &__pagination-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        border: 1px solid #6E767D;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6E767D;
+        transition: all .2s;
+        &:hover, &--active {
+            border-color: #ED1C24;
+            color: #ED1C24;
+        }
+        path {
+            transition: 0.2s;
+        }
+        &:hover path, &--active path {
+            stroke: #ED1C24;
+        }
+    }
+}
