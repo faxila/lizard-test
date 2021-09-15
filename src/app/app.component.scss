@@ -1,0 +1,10 @@
+@import '../variables';
+.contacts {
+    padding-bottom: 23px;
+    &__container {
+        max-width: 1395px;
+        margin: 0 auto;
+        background-color: $colorWhite;
+        padding: 41px 51px 37px 93px;
+    }
+}
