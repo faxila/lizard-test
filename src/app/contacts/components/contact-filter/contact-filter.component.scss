@@ -1,0 +1,112 @@
+@import '../../../../variables';
+
+.contacts {
+    &__filter {
+        margin-bottom: 30px;
+    }
+    &__form {
+        display: flex;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.07);
+        border: 1px solid $colorBorderForm;
+        border-radius: 72px;
+        margin-bottom: 12px;
+    }
+    &__select-inner {
+        position: relative;
+        max-width: 420px;
+        width: 100%;
+    }
+    &__arrow-down {
+        position: absolute;
+        width: 11px;
+        height: 6px;
+        right: 15px;
+        top: 3px;
+        z-index: 99;
+    }
+    &__select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        font-family: $font-roboto;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        width: 100%;
+        border: none;
+        color: $colorInput;
+        padding: 7px 15px;
+        border-radius: 72px 0 0 72px;
+    }
+    &__input-inner {
+        position: relative;
+        border-left: 1px solid $colorBorderForm;
+        width: 100%;
+    }
+    &__input {
+        width: 100%;
+        font-family: $font-roboto;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: $colorInput;
+        border: none;
+        padding: 7px 50px 7px 8px;
+        border-radius: 0 72px 72px 0;
+    }
+    &__btn {
+        top: 3px;
+        right: 5px;
+        position: absolute;
+        border: none;
+        background-color: transparent;
+    }
+    &__toggle {
+        display: flex;
+        font-size: 16px;
+        line-height: 19px;
+        color: #B3B3B3;
+    }
+    &__toogle-text + &__toogle-text {
+        margin-left: 50px;
+    }
+}
+.toggle-button {
+    margin: 0 4px;
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: rect(0 0 0 0);
+    }
+    &__input-control {
+        position: relative;
+        display: inline-block;
+        width: 25px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: $colorDarkWhite;
+        cursor: pointer;
+        transition: all .2s;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: -2px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background-color: #FAFAFA;
+            box-shadow: 0px 1px 2px 0px #7f7f7f;
+            transition: all .2s;
+        }
+    }
+    &__input:checked + &__input-control {
+        background-color: #AFAFAF;
+    }
+    &__input:checked + &__input-control::after {
+        left: 12px;
+    }
+}
